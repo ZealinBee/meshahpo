@@ -158,7 +158,7 @@ footer {
 }
 
 .footer-wrapper {
-  width: 70%;
+  width: 100%;
   background: rgb(255, 114, 113);
   display: flex;
   justify-content: center;
