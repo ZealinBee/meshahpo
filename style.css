@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Poppins:wght@300;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  width: 100%;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Open Sans Condensed", sans-serif;
+  position: relative;
+  width: 100%;
+}
+
+header nav {
+  margin-top: 4.5em;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  background: rgba(177, 176, 179, 0.7);
+  width: 100%;
+  height: 1px;
+  bottom: 20%;
+}
+
+header ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+header li {
+  list-style: none;
+}
+
+header li a {
+  text-decoration: none;
+  color: rgb(177, 176, 179);
+  padding: 0 2rem;
+  font-size: 1.2rem;
+}
+
+header li a:hover {
+  color: black;
+}
+
+.header-img {
+  width: 70px;
+  margin-top: 1em;
+}
+
+.header-img img {
+  width: 70px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  margin-top: 2em;
+  height: 62vh;
+  height: 100%;
+}
+
+.mainpart {
+  height: 62vh;
+  background: rgb(255, 114, 113);
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main h1 {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 3.5rem;
+  font-weight: 400;
+}
+
+.education,
+.skills,
+.work {
+  margin-top: 2em;
+  display: flex;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.education-wrapper,
+.skills-wrapper,
+.work-wrapper {
+  width: 70%;
+}
+
+.education h1,
+.skills h1,
+.work h1 {
+  font-weight: 700;
+  font-family: "Poppins";
+  color: rgb(255, 114, 113);
+  font-size: 1.6em;
+}
+
+.education-place,
+.work-place {
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.education-place span,
+.work-place span {
+  font-weight: 300;
+  font-style: italic;
+}
+
+.education-description,
+.work-description {
+  margin-top: 0.5em;
+  line-height: 1.5em;
+}
+
+.skills li {
+  font-size: 1rem;
+  padding: 0.4rem 0;
+  list-style: none;
+}
+
+.skills li p {
+  line-height: 1.5em;
+  margin-top: 0.5rem;
+}
+
+.work-time,
+.education-time {
+  margin-top: 1em;
+  margin-bottom: 0.5rem;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "poppins";
+  margin-top: 2em;
+}
+
+.footer-wrapper {
+  width: 70%;
+  background: rgb(255, 114, 113);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer-wrapper h4 {
+  padding: 0.5em;
+}
+
+@media (max-width: 600px) {
+  main h1 {
+    font-size: 2rem;
+  }
+
+  header li a {
+    padding: 0 revert;
+    font-size: 0.9rem;
+  }
+}
